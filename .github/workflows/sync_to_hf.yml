@@ -3,7 +3,6 @@ name: Sync to Hugging Face hub
 on:
   push:
     branches: [main]
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -12,10 +11,26 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
           lfs: true
           
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://darkbrooo:$HF_TOKEN@huggingface.co/spaces/darkbrooo/VoxCPM main
+        run: |
+          # 1. Delete the old GitHub history that HF is rejecting
+          rm -rf .git
+          
+          # 2. Start a fresh, clean commit
+          git init
+          git checkout -b main
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          
+          # 3. Tell Git to use LFS for the media files
+          git lfs install
+          git lfs track "*.png" "*.wav" "*.jpg"
+          
+          # 4. Package everything up and push!
+          git add .
+          git commit -m "Deploy to Hugging Face"
+          git push --force https://darkbrooo:$HF_TOKEN@huggingface.co/spaces/darkbrooo/VoxCPM main
