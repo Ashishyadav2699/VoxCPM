@@ -39,29 +39,29 @@ _USAGE_INSTRUCTIONS_EN = (
 
 _EXAMPLES_FOOTER_EN = (
     "---\n"
-    "**💡 Voice Description Examples:**  \n"
+    "**💡 Voice Description Examples:** \n"
     "Try the following Control Instructions to explore different voices:  \n\n"
-    "**Example 1 — Gentle & Melancholic Girl**  \n"
+    "**Example 1 — Gentle & Melancholic Girl** \n"
     '`Control Instruction`: *"A young girl with a soft, sweet voice. '
-    'Speaks slowly with a melancholic, slightly tsundere tone."*  \n'
+    'Speaks slowly with a melancholic, slightly tsundere tone."* \n'
     '`Target Text`: *"I never asked you to stay… It\'s not like I care or anything. '
-    'But… why does it still hurt so much now that you\'re gone?"*  \n\n'
-    "**Example 2 — Laid-Back Surfer Dude**  \n"
+    'But… why does it still hurt so much now that you\'re gone?"* \n\n'
+    "**Example 2 — Laid-Back Surfer Dude** \n"
     '`Control Instruction`: *"Relaxed young male voice, slightly nasal, '
-    'lazy drawl, very casual and chill."*  \n'
+    'lazy drawl, very casual and chill."* \n'
     '`Target Text`: *"Dude, did you see that set? The waves out there are totally gnarly today. '
     "Just catching barrels all morning — it's like, totally righteous, you know what I mean?\"*"
 )
 
 _USAGE_INSTRUCTIONS_ZH = (
     "**VoxCPM2 — 三种语音生成方式：**\n\n"
-    "🎨 **声音设计（Voice Design）**  \n"
+    "🎨 **声音设计（Voice Design）** \n"
     "无需参考音频。在 **Control Instruction** 中描述目标音色特征"
     "（性别、年龄、语气、情绪、语速等），VoxCPM2 即可为你从零创造独一无二的声音。\n\n"
-    "🎛️ **可控克隆（Controllable Cloning）**  \n"
+    "🎛️ **可控克隆（Controllable Cloning）** \n"
     "上传参考音频，同时可选地使用 **Control Instruction** 来指定情绪、语速、风格等表达方式，"
     "在保留原始音色的基础上灵活控制说话风格。\n\n"
-    "🎙️ **极致克隆（Ultimate Cloning）**  \n"
+    "🎙️ **极致克隆（Ultimate Cloning）** \n"
     "开启 **极致克隆模式** 并提供参考音频的文字内容（可自动识别）。"
     "模型会将参考音频视为已说出的前文，以**音频续写**的方式完整还原参考音频中的所有声音细节。"
     "注意：该模式与可控克隆模式互斥，将禁用Control Instruction。\n\n"
@@ -69,27 +69,27 @@ _USAGE_INSTRUCTIONS_ZH = (
 
 _EXAMPLES_FOOTER_ZH = (
     "---\n"
-    "**💡 声音描述示例（中英文均可）：**  \n\n"
-    "**示例 1 — 深宫太后**  \n"
+    "**💡 声音描述示例（中英文均可）：** \n\n"
+    "**示例 1 — 深宫太后** \n"
     '`Control Instruction`: *"中老年女性，声音低沉阴冷，语速缓慢而有力，'
-    '字字深思熟虑，带有深不可测的城府与威慑感。"*  \n'
-    '`Target Text`: *"哀家在这深宫待了四十年，什么风浪没见过？你以为瞒得过哀家？"*  \n\n'
-    "**示例 2 — 暴躁驾校教练**  \n"
-    '`Control Instruction`: *"暴躁的中年男声，语速快，充满无奈和愤怒"*  \n'
+    '字字深思熟虑，带有深不可测的城府与威慑感。"* \n'
+    '`Target Text`: *"哀家在这深宫待了四十年，什么风浪没见过？你以为瞒得过哀家？"* \n\n'
+    "**示例 2 — 暴躁驾校教练** \n"
+    '`Control Instruction`: *"暴躁的中年男声，语速快，充满无奈和愤怒"* \n'
     '`Target Text`: *"踩离合！踩刹车啊！你往哪儿开呢？前面是树你看不见吗？'
-    '我教了你八百遍了，打死方向盘！你是不是想把车给我开到沟里去？"*  \n\n'
+    '我教了你八百遍了，打死方向盘！你是不是想把车给我开到沟里去？"* \n\n'
     "---\n"
-    "**🗣️ 方言生成指南：**  \n"
+    "**🗣️ 方言生成指南：** \n"
     "要生成地道的方言语音，请在 **Target Text** 中直接使用方言词汇和句式，"
     "并在 **Control Instruction** 中描述方言特征。  \n\n"
-    "**示例 — 广东话**  \n"
-    '`Control Instruction`: *"粤语，中年男性，语气平淡"*  \n'
-    '✅ 正确（粤语表达）：*"伙計，唔該一個A餐，凍奶茶少甜！"*  \n'
-    '❌ 错误（普通话原文）：*"伙计，麻烦来一个A餐，冻奶茶少甜！"*  \n\n'
-    "**示例 — 河南话**  \n"
-    '`Control Instruction`: *"河南话，接地气的大叔"*  \n'
-    '✅ 正确（河南话表达）：*"恁这是弄啥嘞？晌午吃啥饭？"*  \n'
-    '❌ 错误（普通话原文）：*"你这是在干什么呢？中午吃什么饭？"*  \n\n'
+    "**示例 — 广东话** \n"
+    '`Control Instruction`: *"粤语，中年男性，语气平淡"* \n'
+    '✅ 正确（粤语表达）：*"伙計，唔該一個A餐，凍奶茶少甜！"* \n'
+    '❌ 错误（普通话原文）：*"伙计，麻烦来一个A餐，冻奶茶少甜！"* \n\n'
+    "**示例 — 河南话** \n"
+    '`Control Instruction`: *"河南话，接地气的大叔"* \n'
+    '✅ 正确（河南话表达）：*"恁这是弄啥嘞？晌午吃啥饭？"* \n'
+    '❌ 错误（普通话原文）：*"你这是在干什么呢？中午吃什么饭？"* \n\n'
     "🤖 **小技巧：** 不知道方言怎么写？可以用豆包、DeepSeek、Kimi 等 AI 助手"
     "将普通话翻译为方言文本，再粘贴到 Target Text 中即可。  \n\n"
 )
@@ -322,7 +322,7 @@ class VoxCPMDemo:
 
 # ---------- UI ----------
 
-def create_demo_interface(demo: VoxCPMDemo):
+def create_demo_interface(demo_instance: VoxCPMDemo):
     gr.set_static_paths(paths=[Path.cwd().absolute() / "assets"])
 
     def _generate(
@@ -338,7 +338,7 @@ def create_demo_interface(demo: VoxCPMDemo):
     ):
         actual_prompt_text = prompt_text_value.strip() if use_prompt_text else ""
         actual_control = "" if use_prompt_text else control_instruction
-        sr, wav_np = demo.generate_tts_audio(
+        sr, wav_np = demo_instance.generate_tts_audio(
             text_input=text,
             control_instruction=actual_control,
             reference_wav_path_input=ref_wav,
@@ -368,14 +368,14 @@ def create_demo_interface(demo: VoxCPMDemo):
             return gr.update()
         try:
             logger.info("Running ASR on reference audio...")
-            asr_text = demo.prompt_wav_recognition(audio_path)
+            asr_text = demo_instance.prompt_wav_recognition(audio_path)
             logger.info(f"ASR result: {asr_text[:60]}...")
             return gr.update(value=asr_text)
         except Exception as e:
             logger.warning(f"ASR recognition failed: {e}")
             return gr.update(value="")
 
-    with gr.Blocks() as interface:
+    with gr.Blocks(theme=_APP_THEME, css=_CUSTOM_CSS) as interface:
         gr.HTML(
             '<div class="logo-container">'
             '<img src="/gradio_api/file=assets/voxcpm_logo.png" alt="VoxCPM Logo">'
@@ -482,31 +482,15 @@ def create_demo_interface(demo: VoxCPMDemo):
 
     return interface
 
-def run_demo(
-    server_name: str = "0.0.0.0",
-    server_port: int = 8808,
-    show_error: bool = True,
-    model_id: str = "openbmb/VoxCPM2",
-):
-    demo = VoxCPMDemo(model_id=model_id)
-    interface = create_demo_interface(demo)
-    interface.queue(max_size=10, default_concurrency_limit=1).launch(
-        server_name=server_name,
-        server_port=server_port,
-        show_error=show_error,
-        i18n=I18N,
-        theme=_APP_THEME,
-        css=_CUSTOM_CSS,
-    )
+# ---------- Hugging Face Deployment Fix ----------
 
+# Initialize the model and UI globally so Hugging Face can find it
+vox_demo = VoxCPMDemo(model_id="openbmb/VoxCPM2")
+demo = create_demo_interface(vox_demo)
 
+# Apply the queue settings
+demo.queue(max_size=10, default_concurrency_limit=1)
+
+# Launch the app
 if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--model-id", type=str, default="openbmb/VoxCPM2",
-        help="Local path or HuggingFace repo ID (default: openbmb/VoxCPM2)",
-    )
-    parser.add_argument("--port", type=int, default=8808, help="Server port")
-    args = parser.parse_args()
-    run_demo(model_id=args.model_id, server_port=args.port)
+    demo.launch(show_error=True)
